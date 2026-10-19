@@ -101,6 +101,8 @@ PAC3_Lopez_Jose/
 ├── blender/
 │   ├── THE_CORE_animacio.blend
 │   └── THE_CORE_escenari.blend
+├── codiQR/
+│   ├── THE_CORE_QR.png
 ├── css/
 │   └── style.css
 ├── js/
@@ -134,9 +136,11 @@ Per facilitar la visualització del projecte des de diferents dispositius he inc
 
 Aquest codi QR ens permet obrir l'experiència des d'un telèfon o una tauleta simplement escanejant-lo amb la càmera del dispositiu.
 
-**Enllaç a l'experiència:** XXXXXXXXXXXXXXXXXXX.
+**Enllaç a l'experiència:** https://jlsender.github.io/PAC3_Lopez_Jose/
 
-**Codi QR:** XXXXXXXXXXXXXXXXXXX.
+**Codi QR:**
+
+![Codi QR de THE CORE](codiQR/THE_CORE_QR.png)
 
 ## 9. Eines i tecnologies utilitzades
 
