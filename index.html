@@ -1,0 +1,103 @@
+<!-- ***       06.540 – Realitat virtual – Aula 1 - Universitat Oberta de Catalunya - Curs 2026-27/1           ***
+     ***                                  PAC3. Tutorial d'A-FRAME 360º                                        ***
+     ***                                         Jose López Sender                                             ***
+     ***                                            index.html                                                 *** -->
+
+
+<!DOCTYPE html>
+
+<html lang="ca">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>THE CORE</title>
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+        <script src="js/script.js" defer></script>
+
+    </head>
+
+    <body>
+        
+        <!-- CONTROLS -->
+
+        <div id="controls">
+
+            <button id="btnImatge" class="active">
+                PANORAMA 360º
+            </button>
+            
+            <button id="btnVideo">
+                VÍDEO 360º
+            </button>
+
+        </div> 
+
+        <!-- ESCENA A-FRAME -->
+
+        <a-scene>
+
+            <a-assets timeout="30000">
+
+                <img
+
+                    id="panorama"
+                    src="recursos/imatges/THE_CORE_360.jpg">
+
+                <video
+
+                    id="video360"
+                    src="recursos/videos/THE_CORE_360.mp4"
+
+                    loop
+                    muted
+                    playsinline
+                    webkit-playsinline
+                    preload="metadata"
+                    crossorigin="anonymous">
+
+                </video>
+                
+            </a-assets>
+
+            <!-- PANORAMA 360 -->
+
+            <a-sky
+
+                id="skyImatge"
+                src="#panorama"
+                rotation="0 265 0"
+                visible="true">
+            
+            </a-sky>
+
+            <!-- VIDEO 360 -->
+            
+            <a-videosphere
+
+                id="skyVideo"
+                src="#video360"
+                rotation="0 265 0"
+                visible="false">
+            
+            </a-videosphere>
+
+            <!-- CÀMERA -->
+
+            <a-camera
+
+                look-controls="enabled: true"
+                wasd-controls="enabled: false">
+            
+            </a-camera>
+
+        </a-scene>
+
+    </body>
+
+</html>
